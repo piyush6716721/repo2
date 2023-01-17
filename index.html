@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <title>piyush</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAz1BMVEX///8Axv/+/v77+/v4+Pjy8vLt7e38wADw8PDw6eb19fUAw//0ugD4vQD+vgBCyvzutgDbsS1YzfoDgaQByP8AfKHrsQD17+zu+/7wtwABu/GXvs4BrN4Adp7k+P+57P7+5qv+zkn+1Gf/78n+9uL+xhf+0lz+35b92oj3+f/1yVL03KHzwkHjswDetSf215Xl7O6P2vg5xusAxPKs4PV71fi+5PIDkboDlb8Do9BBlLGDtMh3rsRUnbYCh67Y6e4rqtGk0uTE8f+j5v/A7v8+2W2oAAAFsElEQVR4nO3dAVPbNhgGYNuJg7ELaR2HhKQJMLpuga3DXQOldGQL/f+/aZKsOHZobItD/qzkfa9XetfIip58kg3HSZaFIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAjSqJxfHBxrzsEvl9SjLMqHX48PasjxR+qBbs+HOgAEwgX1UH8Wh8W6qMvg4Pg33iP1oLNxRKzLWiaCjCNDPXYRJ303v9docHzpNEchfSst5+Pa4EhXUoNzx2mKQirQajlX2kb+PMyAd9kEhLVAzQZH50mf9AgZgVZrJg3eHL3RmqSX61krq9AEgna7PbvSO/Z8rmftdlaB1GBFkBqcnvI/enKaXpkbSAVKgxyB73ODU5G3+pJ0wJSvZ74vESgLIUPg+9xA7/DzEte8yywCGYGTErju7OqEvb2TGsK7uXZdN4dAZpAh8Pw//vz0rqZ8OvnL9dYIZIUgDcRa4LqDm/hzFEW23kQi7Ovfn794Gwj0BF+iQPP4NxJ0F4MEoQEGCUHNAjzRgroQEoOkDLwFAYFtdwcebSHkymBOQWAHt3xJEIVAbuANdK+FWzLPFQIFgTRgt8UOyVSw7bAJBkkZdCgN3L036KwKgchgPRVg0OkcUhkcNsTAIzZIFwQqA5/aoEO4KCobvOj7qZJGZhlE9mikrFDaiBt4xAbtigbR6K7f6z+OlBAi+2uPNXpf0Ega+CYYjHoi/aLxPCMY9fqi0f32RqkBzY1BxSB67EmEkYLBXdpoK4I5dRCN2Afa7/eLP9PNyEbs76+7YHDf630bj8ff+r276gbv2QryMB4/9HuPu2HQ/86afFcxiJjB5MayhpOdMGBlvTJQmwuThTDY3sggg+hxZVBZQKyJ3OBmshNrIkvvH9bkQe3eaD9Ohpa1mBQ0Mskgsv9lTf5TfUa6Z41uixqZZMAGxJosA8WH5S5r9FT0ArMMgilb3tQE7GDO+pkXXdowgzPWpqtoUNrGMAP+mcZqP2YI2JI4LGxilgFbEBxrqmYQsm7OdskgWFqKk0FMhbBYyTADPhmKP9WN8FtJ8VQwzcC22ey2FG6OwZNVuoIYZxBbSoXAHw6sktcYZyAKIayKINaPshuJcQZiRaj6nJS8uOyyxhnwZ0XH+lGtEMRMKL4pGGkgVnrrqcprIz5vyhcPAw1EgVd5WhQE0/ILGmgQiftdaSUEgmBY4T5qoIF89isp8iDkg3G6Fa5ppIF48mHfOBQNUNRKqwqBoQZ2EIvmT1t+pTMIp/y/q0wEcw3Ywijeayt+rhAE4VJcfFnxWqYaRHaUDNQ5C9moVy3Zv7rxNLl24c+OdsGAj3c+lBdZPs1D/lvY3XB+JgGsH9W/sTLYwA7seLjlustKi+EOGHAGOfVzGW5bKnfTgBfDuv75+JdxN1C8jvEGtlgIo3DOEnYj1fHvisHa4mXtdsngpYEBDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAABjCAgUYDwv3SmrCHJHUdNMTAkD0k9RmYs4+mNgPKTaadhu2rS0CQ32N63/dX3u+9xhux3zr2nKfddz+3IAz28/yF/DkcijuhvVbi3Mk8pAbuQHEntFdKsKA/k2ZdCB7JgSxz6gOasgauu6gfIQg9L3s+U/0EuePa2GxYVN796ZUE7LmXnkxEdmhdWggCwRvcxmG3toTxYuClM4HUIIvgDXgO9Uf0wwWacW6fnA3y9EKPPS3VEy8R8DOnmVIQ/ARBMGh38ASAJCA+x3PjSFtfMkgJXZFdyJNMyc9zzSCkCqmDxiT95I/1pT3bOFMKKwb9SXprAEEeQSrolkg7STolJ0gRVsedZxz0ppUTaMah92sFvRb5XpxGEGQQNhl0x2mKAI+zEf1jb+X6ox6/zCZDfaEeeT57D5DN3g4cQRAEQRAEQRAEQRAEQRAEQfYm/wO0bDPjbdH2HgAAAABJRU5ErkJggg==">
+    <style>
+
+      
+        .fun{
+            position :relative;
+            top:22px;
+            left:130px;
+        }
+        h1{position :relative;
+            top:20px;
+            right:1px;
+            margin:2px;
+            margin-top: 70px;
+            text-shadow: 10px 4px 8px 0 rgba(0,0,0,0.2);
+
+        }
+
+        .bor{
+          border: 1px solid rgb(65, 15, 15);
+          width:200px;
+       border-radius: 20px;
+       margin-bottom: 20px;
+        }
+        .card {
+
+  transition: 0.3s;
+  
+ 
+/* display:flex; */
+  /* align-items: center; */
+  height: 300px;
+
+flex-direction: row;
+width:500px;
+justify-content: center;
+justify-content: space-around;
+
+
+  
+ 
+  
+}
+#popup{
+  width: 500px;
+  margin:10px;
+  background-color:rgb(91, 230, 91) ;
+  color: black;
+}
+/* #slys{
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+    top:300px;
+} */
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* #carr{
+    position:relative;
+    bottom:330px;
+    left:200px;
+    top:100px;
+} */
+.container {
+  padding: 2px 16px;
+}
+    </style>
+</head>
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="popup" >
+        <strong>Successfully log in!</strong> You are successfully log in here.  
+        <button type="button" class=" btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+<h1 class="hw">
+   <b> Welcome to</b><br>
+    <b>Brainy Badgers 👨‍🎓...</b>
+</h1>
+
+<img class="fun" src="https://www.sourcecodester.com/sites/default/files/styles/large/public/images/GeePee/screenshot_51.jpg?itok=UdcnCs2S">
+
+<div class="card">  
+      <div  class="bor">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9pyu6B8r_B0KNMWrwvFLRLVXuYmKrisYMuA&usqp=CAU" alt="Avatar"  style="width:100px" height="100px">
+       
+          <h4><b>syllabus here</b></h4> 
+          <p>Click here <a href="https://piyush6716721.github.io/repo/">go here</a></p> 
+        </div>
+     
+      
+      <div class="bor">
+        <img src="https://static.tnn.in/photo/msid-96898212/96898212.jpg" alt="Avatar" style="width:100px" height="100px">
+        
+          <h4><b>Result's here</b></h4> 
+          <p>Click here <a href="#">go here</a></p>  
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> 
+      <br>
+    
+</body>
+</html>
